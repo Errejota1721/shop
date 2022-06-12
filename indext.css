@@ -1,0 +1,287 @@
+/*Css de la tabla de mrd*/
+
+#tablaTarifas{
+display: grid;
+background-color: rgb(131, 131, 241);
+border-radius: 5px;
+row-gap: 5px;
+column-gap: 5px;
+grid-template-areas: 
+"servicio destino peso tarifa"
+"items itemd itemp itemt"
+"items2 itemd2 itemp2 itemt2"
+"items3 itemd3 itemp3 itemt3";
+border: solid 1px black;
+margin:auto;
+width: 80%;
+height: auto;
+}
+
+#tablaTarifas p{
+    font-family: 'consolas','monospace';
+    font-size: 15px;
+    border: solid 1px black;
+    padding-left: 5px;
+    color: white;
+    font-weight: bold;
+}
+#tablaTarifas h4{
+
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: 'monospace','consolas';
+    border-radius: 5px;
+
+}
+
+.s{grid-template-areas: servicio;}
+.d{grid-template-areas: destino;}
+.p{grid-template-areas: peso;}
+.t{grid-template-areas: tarifa;}
+
+
+.is1{grid-template-areas: items;}
+.id1{grid-template-areas: itemd;}
+.ip1{grid-template-areas: itemp;}
+.it1{grid-template-areas: itemt;}
+
+
+.is2{grid-template-areas: items2;}
+.id2{grid-template-areas: itemd2;}
+.ip2{grid-template-areas: itemp2;}
+.it2{grid-template-areas: itemt2;}
+
+
+
+.is3{grid-template-areas: items3;}
+.id3{grid-template-areas: itemd3;}
+.ip3{grid-template-areas: itemp3;}
+.it3{grid-template-areas: itemt3;}
+
+
+
+/*Estructura CSS de la página*/
+
+
+
+
+header{
+display: flex;
+position:absolute;
+justify-content: space-between;
+align-items: center;
+padding: 0 20px;
+min-height: 75px;
+background-color: antiquewhite;
+width: 100%;
+}
+
+
+#header  img{
+display: flex;
+width:300px;
+height: 100;
+
+}
+
+
+
+#nav-bar{
+    width: 50%;
+    height: auto;
+  
+}
+
+#nav-bar ul{
+display: flex;
+justify-content:  center;
+align-items: center;
+flex-wrap: wrap;
+
+}
+
+#nav-bar li{
+list-style: none;
+padding-right:10px;
+font-family: 'consolas','monospace';
+font-weight: bold;
+border-right: solid 2px black;
+margin-left: 10px;
+}
+
+#nav-bar a{
+
+    text-decoration: none;
+}
+
+@media only screen and (max-height:700px){
+body{margin:0;}
+header {position:fixed;}
+}
+
+#service {
+display: flex;
+flex-direction: column;
+width: 100%;
+height:auto;
+justify-content: space-between;
+align-items:center ;
+flex-wrap: wrap;
+
+}
+
+#service  img{
+margin-top:150px;
+width: 100px;
+height: 100px;
+border: solid  3px grey;
+border-radius: 50%;
+box-shadow: 3px 3px 5px black;
+
+}
+
+#service h1, h2{
+font-family: 'consolas','monospace';
+}
+
+#service p,li{
+
+    font-family: 'monospace','consolas';
+    font-size: 15px;
+
+}
+
+#service li{list-style: none;
+font-weight:bold;}
+
+#service h2{text-align: left;}
+
+
+/*Comienzo de Tarifas*/
+
+#tarifas {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+#tarifas img{
+width:100px;
+height:100px;
+margin-top: 150px;
+border:solid 3px grey;
+border-radius:50%;
+box-shadow: 3px 3px 5px black;
+}
+
+
+/*Comienzo Informacion*/
+
+#about{
+margin-top: 150px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+#about img{
+width:100px;
+height:100px;
+margin-right: 20px;
+border-radius: 50%;
+box-shadow: 3px 3px 5px black;
+
+}
+
+#about h1{
+font-family: 'consolas', 'monospace';
+}
+
+#about p{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 20px;
+font-family: 'consolas','monospace';
+
+}
+
+#form{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    padding-top: 20px;
+}
+
+#contact img{
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px black;
+    width:100px;
+    height:100px;
+}
+
+#contact h1, label{
+    font-family: 'consolas','monospace';
+    
+}
+
+#contact label{
+
+    font-family: 'consolas','monospace';
+    font-size: 16px;
+    font-weight: bold;
+    
+
+}
+
+#email{
+margin-left:25px;
+width: 300px;
+height:auto;
+margin-bottom:5px;
+}
+#commit{
+border-radius: 5px;
+    width: 300px;
+    height:auto;
+}
+
+#submit{
+background-color: rgb(131, 131, 241);
+color:white;
+font-family: 'consolas','monospace';
+border-radius: 5px;
+    width: 200px;
+    height: 50px;
+
+}
+
+#submit:hover{
+
+color:red;
+animation-name: pulse;
+animation-duration: 800ms;
+animation-iteration-count: infinite;
+}
+
+@keyframes pulse{
+50%{
+transform: scale(1.1);
+}
+
+100%{
+    transform: scale(1);
+}
+
+}
+
+
